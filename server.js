@@ -2,7 +2,6 @@ const http = require('http')
 const fs = require('fs')
 const path = require('path')
 
-
 http.createServer((req, res) => {
 
     const file = req.url === '/' ? 'index.html' : req.url
@@ -22,4 +21,4 @@ http.createServer((req, res) => {
             res.end(content)
         }
     )
-}).listen(5050, () => console.log('Server is running'))
+}).listen(5000, () => console.log('Server is running'))
